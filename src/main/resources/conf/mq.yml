@@ -1,4 +1,4 @@
-servers: localhost:9876 #for rocketmq: means the nameserver
+servers: 10.82.12.63:9092 #for rocketmq: means the nameserver
 retries: 0
 batchSize: 16384
 lingerMs: 1
