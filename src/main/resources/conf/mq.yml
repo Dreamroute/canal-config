@@ -11,7 +11,7 @@ canalGetTimeout: 100
 flatMessage: true
 
 canalDestinations:
-  - canalDestination: cenpur
+  - canalDestination: example
     topic: cenpur
     partition: 0
 #  #对应topic分区数量
