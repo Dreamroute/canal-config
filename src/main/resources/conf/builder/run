@@ -1,4 +1,4 @@
-sh mycanal.sh \
+sh run.sh \
      -e canal.instance.master.address=10.82.12.63:3306 \
      -e canal.instance.dbUsername=canal \
      -e canal.instance.dbPassword=canal \
