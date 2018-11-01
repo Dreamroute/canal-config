@@ -2,7 +2,7 @@ servers: 10.82.12.63:9092 #for rocketmq: means the nameserver
 retries: 0
 batchSize: 16384
 lingerMs: 1
-bufferMemory: 33554432
+bufferMemory: 100000
 
 # Canal的batch size, 默认50K, 由于kafka最大消息体限制请勿超过1M(900K以下)
 canalBatchSize: 50
@@ -11,9 +11,9 @@ canalGetTimeout: 100
 flatMessage: true
 
 canalDestinations:
-  - canalDestination: example
-    topic: example
-    partition: 3
+  - canalDestination: cenpur
+    topic: cenpur
+    partition: 0
 #  #对应topic分区数量
 #    partitionsNum: 5
 #  partitionHash:

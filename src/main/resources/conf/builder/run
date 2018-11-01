@@ -3,6 +3,6 @@ sh mycanal.sh \
      -e canal.instance.dbUsername=canal \
      -e canal.instance.dbPassword=canal \
      -e canal.instance.connectionCharset=UTF-8 \
-     -e canal.instance.tsdb.enable=true \
+     -e canal.instance.tsdb.enable=false \
      -e canal.instance.gtidon=false \
      -e canal.instance.filter.regex=.*\\..*
