@@ -15,7 +15,7 @@ canalDestinations:
     topic: example
     partition: 3
 #  #对应topic分区数量
-#  partitionsNum: 3
+    partitionsNum: 3
 #  partitionHash:
 #    #库名.表名: 唯一主键
 #    mytest.person: id
