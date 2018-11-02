@@ -75,13 +75,14 @@ function checkStart() {
       
   function start_canal() {
       echo "start canal ..."
-      echo "===>>>><<<<==="
       serverPort=`perl -le 'print $ENV{"canal.port"}'`
       if [ -z "$serverPort" ] ; then
           serverPort=11111
       fi
   
       destination=`perl -le 'print $ENV{"canal.destinations"}'`
+      echo "~~~~~~~~~~"
+      echo $destination 
       if [[ "$destination" =~ ',' ]]; then
           echo "multi destination:$destination is not support"
           exit 1;
