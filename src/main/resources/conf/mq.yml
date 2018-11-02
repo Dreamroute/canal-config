@@ -13,7 +13,7 @@ flatMessage: true
 canalDestinations:
   - canalDestination: example
     topic: example
-    partition: 3
+    partition: 1
 #  #对应topic分区数量
 #    partitionsNum: 3
 #  partitionHash:
