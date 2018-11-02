@@ -105,6 +105,7 @@ function checkStart() {
      }
      
      echo "==> START ..."
+     echo "^^^^^^^^^"
      
      start_canal
      
