@@ -93,6 +93,7 @@ function checkStart() {
               fi
           fi
       fi
+      echo "^^^^^^^^^^^^^"
       su admin -c 'cd /home/admin/canal-server/bin/ && sh restart.sh 1>>/tmp/start.log 2>&1'
       sleep 5
       #check start
