@@ -1,5 +1,5 @@
 servers: 10.82.12.63:9092 #for rocketmq: means the nameserver
-retries: 2
+retries: 0
 batchSize: 16384
 lingerMs: 1
 bufferMemory: 33554432
@@ -13,9 +13,9 @@ flatMessage: true
 canalDestinations:
   - canalDestination: example
     topic: example
-#    partition: 1
+    partition: 1
 #  #对应topic分区数量
-    partitionsNum: 5
+#    partitionsNum: 3
 #  partitionHash:
 #    #库名.表名: 唯一主键
 #    mytest.person: id
