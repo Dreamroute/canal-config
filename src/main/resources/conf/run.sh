@@ -42,7 +42,6 @@ function getMyIp() {
          myip=`ip route get 1 | awk '{print $NF;exit}'`
          ;;
   esac
-  echo $myip
 }
 
 NET_MODE=""
@@ -60,7 +59,7 @@ case "`uname`" in
         ;;
 esac
 BASE=${bin_abs_path}
-echo "BASE: "$BASE
+
 if [ $# -eq 0 ]; then
     usage
 elif [ "$1" == "-h" ] ; then
@@ -72,7 +71,7 @@ fi
 DATA="$BASE/data"
 mkdir -p $DATA
 CONFIG=${@:1}
-#VOLUMNS="-v $DATA:/home/admin/canal-server/logs"
+VOLUMNS="-v $DATA:/home/admin/canal-server/logs"
 PORTLIST="8000 2222 11111 11112"
 PORTS=""
 for PORT in $PORTLIST ; do
@@ -89,6 +88,6 @@ done
 MEMORY="-m 4096m"
 LOCALHOST=`getMyIp`
 #cmd="docker run -it -h $LOCALHOST $CONFIG --name=canal-server $VOLUMNS $NET_MODE $PORTS $MEMORY canal/canal-server"
-cmd="docker run -it -h $LOCALHOST $CONFIG --name=canal-server -v /usr/local/src/mysql-docker/canal-server/logs:/home/admin/canal-server/logs $VOLUMNS $NET_MODE $PORTS $MEMORY dreamroute/canal:latest"
+cmd="docker run -it -h 10.82.12.63 $CONFIG --name=canal-server $VOLUMNS $NET_MODE $PORTS $MEMORY dreamroute/canal:latest"
 echo $cmd
 eval $cmd
