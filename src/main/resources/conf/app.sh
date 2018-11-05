@@ -55,11 +55,7 @@ function checkStart() {
     local cmd=$2
     local timeout=$3
     
-    echo $name;
-    echo $cmd;
-    echo $timeout;
-    
-    cost=5
+    cost=50
     while [ $timeout -gt 0 ]; do
         ST=`eval $cmd`
         if [ "$ST" == "0" ]; then
@@ -74,6 +70,7 @@ function checkStart() {
             break
         fi
     done
+    
     echo "start $name successful"
 }
 
