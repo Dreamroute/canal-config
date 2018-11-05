@@ -54,6 +54,11 @@ function checkStart() {
     local name=$1
     local cmd=$2
     local timeout=$3
+    
+    echo $name;
+    echo $cmd;
+    echo $timeout;
+    
     cost=5
     while [ $timeout -gt 0 ]; do
         ST=`eval $cmd`
