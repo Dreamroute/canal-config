@@ -58,6 +58,7 @@ function checkStart() {
     cost=50
     while [ $timeout -gt 0 ]; do
         ST=`eval $cmd`
+        echo "ST: ==>" + $ST
         if [ "$ST" == "0" ]; then
             sleep 1
             let timeout=timeout-1
