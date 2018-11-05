@@ -55,6 +55,8 @@ function checkStart() {
     local cmd=$2
     local timeout=$3
     
+    echo "GOGO"
+    
     cost=50
     while [ $timeout -gt 0 ]; do
         ST=`eval $cmd`
