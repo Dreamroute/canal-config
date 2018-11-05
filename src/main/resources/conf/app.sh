@@ -73,6 +73,7 @@ function checkStart() {
 }
 
 function start_canal() {
+    echo "w.dehai"
     echo "start canal ..."
     serverPort=`perl -le 'print $ENV{"canal.port"}'`
     if [ -z "$serverPort" ] ; then
