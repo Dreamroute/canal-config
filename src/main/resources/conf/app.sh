@@ -76,6 +76,7 @@ function start_canal() {
     echo "start canal ..."
     serverPort=`perl -le 'print $ENV{"canal.port"}'`
     echo "^^^^"
+    echo "^^^^"
     echo serverPort 
     if [ -z "$serverPort" ] ; then
         serverPort=11111
