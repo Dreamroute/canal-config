@@ -11,8 +11,8 @@ case "`uname`" in
     	;;
 esac
 
-echo cygwin
-echo linux
+echo "cygwin: "$cygwin
+echo "linux: "$linux
 
 get_pid() {	
 	STR=$1
