@@ -33,6 +33,7 @@ fi
 if [ -z "$JAVA" ] ; then
   JAVA=$(which java)
 fi
+echo "JAVA: "$JAVA
 
 ALIBABA_JAVA="/usr/alibaba/java/bin/java"
 TAOBAO_JAVA="/opt/taobao/java/bin/java"
