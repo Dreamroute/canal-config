@@ -2,6 +2,8 @@
 
 cygwin=false;
 linux=false;
+echo "cygwin: "$cygwin
+echo "linux: "$linux
 case "`uname`" in
     CYGWIN*)
         cygwin=true
