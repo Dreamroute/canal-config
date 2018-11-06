@@ -85,8 +85,9 @@ for PORT in $PORTLIST ; do
     fi
 done
 
-MEMORY="-m 4096m"
+MEMORY="-m 2048m"
 LOCALHOST=`getMyIp`
+echo "LOCALHOST: "$LOCALHOST
 #cmd="docker run -it -h $LOCALHOST $CONFIG --name=canal-server $VOLUMNS $NET_MODE $PORTS $MEMORY canal/canal-server"
 cmd="docker run -it -h 10.82.12.63 $CONFIG --name=canal-server $VOLUMNS $NET_MODE $PORTS $MEMORY dreamroute/canal:latest"
 echo $cmd
