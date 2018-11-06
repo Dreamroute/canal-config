@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+echo "~~~~~~~~~~~~~~~~~~~~~~~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~"
 current_path=`pwd`
 echo "current_path: "$current_path
 case "`uname`" in
