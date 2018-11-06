@@ -13,7 +13,7 @@ esac
 base=${bin_abs_path}/..
 canal_conf=$base/conf/canal.properties
 logback_configurationFile=$base/conf/logback.xml
-echo $base
+echo "base: =>>"$base
 export LANG=en_US.UTF-8
 export BASE=$base
 
