@@ -48,6 +48,7 @@ if [ ! -f "$pidfile" ];then
 	echo "canal is not running. exists"
 	exit
 fi
+echo "pidfile: "$pidfile
 
 pid=`cat $pidfile`
 if [ "$pid" == "" ] ; then
