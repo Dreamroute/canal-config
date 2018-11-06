@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 current_path=`pwd`
+echo "current_path: "$current_path
 case "`uname`" in
     Linux)
 		bin_abs_path=$(readlink -f $(dirname $0))
@@ -12,6 +13,7 @@ esac
 base=${bin_abs_path}/..
 canal_conf=$base/conf/canal.properties
 logback_configurationFile=$base/conf/logback.xml
+echo $base
 export LANG=en_US.UTF-8
 export BASE=$base
 

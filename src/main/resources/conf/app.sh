@@ -87,7 +87,7 @@ function start_canal() {
     fi
 	echo "serverPort: "$serverPort
     destination=`perl -le 'print $ENV{"canal.destinations"}'`
-    echo $destination
+    echo "destination: "$destination
     if [[ "$destination" =~ ',' ]]; then
         echo "multi destination:$destination is not support"
         exit 1;
