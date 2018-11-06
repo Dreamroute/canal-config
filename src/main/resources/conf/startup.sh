@@ -48,6 +48,8 @@ if [ -z "$JAVA" ]; then
   fi
 fi
 
+echo "JAVA: "$JAVA
+
 case "$#" 
 in
 0 ) 
