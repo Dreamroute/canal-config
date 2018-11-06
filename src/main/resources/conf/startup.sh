@@ -26,6 +26,7 @@ fi
 
 if [ ! -d $base/logs/canal ] ; then 
 	mkdir -p $base/logs/canal
+	echo "mkdir -p $base/logs/canal"
 fi
 
 ## set java path
