@@ -49,7 +49,8 @@ if [ -z "$JAVA" ]; then
 fi
 
 echo "JAVA: "$JAVA
-
+echo "-------------"
+echo "$#"
 case "$#" 
 in
 0 ) 
@@ -77,6 +78,7 @@ in
 	echo "THE PARAMETERS MUST BE TWO OR LESS.PLEASE CHECK AGAIN."
 	exit;;
 esac
+echo "canal_conf: "$canal_conf
 
 str=`file -L $JAVA | grep 64-bit`
 if [ -n "$str" ]; then
