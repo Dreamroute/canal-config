@@ -106,7 +106,7 @@ function start_canal() {
     sleep 5
     #check start
 #    checkStart "canal" "nc 127.0.0.1 $serverPort -w 1 -z | wc -l" 30
-    checkStart "canal" "nc 10.82.12.63 $serverPort -w 1 -z | wc -l" 30
+    #checkStart "canal" "nc 10.82.12.63 $serverPort -w 1 -z | wc -l" 30
 }
 
 function stop_canal() {
