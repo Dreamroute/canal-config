@@ -99,7 +99,7 @@ function start_canal() {
         fi
     fi
     
-    echo $serverPort "   " $destination  
+    echo "$serverPort: "$serverPort ", destination: "$destination  
     
 #    su admin -c 'cd /home/admin/canal-server/bin/ && sh restart.sh 1>>/tmp/start.log 2>&1'
     su admin -c 'cd /home/admin/canal-server/bin/ && sh restart.sh'
