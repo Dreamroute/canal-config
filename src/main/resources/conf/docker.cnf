@@ -1,0 +1,7 @@
+[mysqld]
+skip-host-cache
+skip-name-resolve
+
+log-bin=mysql-bin
+binlog-format=ROW
+server_id=9528
